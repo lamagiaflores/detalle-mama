@@ -1,0 +1,68 @@
+body {
+    background-color: #f9fbe7; /* Color crema cálido */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #33691e;
+    overflow-x: hidden;
+}
+
+.contenedor {
+    width: 100%;
+}
+
+.mensaje {
+    height: 100vh; /* Ocupa toda la pantalla del móvil */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Colores de fondo por sección */
+.mensaje:nth-child(1) { background-color: #f1f8e9; }
+.mensaje:nth-child(2) { background-color: #dcedc8; }
+.mensaje:nth-child(3) { background-color: #c5e1a5; }
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #1b5e20;
+}
+
+p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.scroll-down {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    animation: bounce 2s infinite;
+}
+
+.foto-final {
+    max-width: 90%; /* Ajuste perfecto para celular */
+    height: auto;
+    border-radius: 20px;
+    border: 8px solid white;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+    margin: 25px 0;
+}
+
+.firma {
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
+}
+
